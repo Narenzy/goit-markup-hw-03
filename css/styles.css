@@ -36,21 +36,22 @@ img {
 .container {
   margin: auto;
   width: 1158px;
-  padding-left: 156px;
-  padding-right: 156px;
-  outline: red 1px solid;
 }
 /* #endregion */
 /* #region header */
-.header .container {
-  width: 1440px;
+.header {
   display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc;
 }
-.logo {
+.header .container {
+  padding: 24px 0px 24px;
   display: flex;
   align-items: center;
+  gap: 40px;
+}
+.logo-header {
+  flex-direction: row;
+  gap: 0px;
+  justify-content: flex-start;
   font-family: "Raleway", sans-serif;
 }
 .logo-web {
@@ -75,6 +76,8 @@ img {
 
 /* #region navigation */
 .nav {
+  display: flex;
+  margin-right: auto;
 }
 .nav-list {
   display: flex;
@@ -82,7 +85,6 @@ img {
   justify-content: flex-start;
   flex-direction: row;
   gap: 40px;
-  padding: 24px 0px;
 }
 .nav-item {
 }
@@ -99,11 +101,12 @@ img {
   color: #404bbf;
 }
 .address {
+  margin-left: auto;
 }
 .address-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0px;
+  align-items: center;
 }
 .mail-item {
 }
@@ -184,7 +187,6 @@ img {
 
 /* #region features */
 .features-section .container {
-  width: 1440px;
 }
 .visually-hidden {
   position: absolute;
@@ -227,7 +229,8 @@ img {
 }
 /* #endregion features */
 /* #region team */
-.team-section {
+.team-section .container {
+  width: 1440px;
   background: #f4f4fd;
 }
 .team-title {
@@ -240,17 +243,25 @@ img {
   color: #2e2f42;
 }
 .team-list {
+  padding-left: 0px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 24px;
+  padding-bottom: 120px;
 }
 .team-item {
+  gap: 8px;
   display: flex;
+  flex-direction: row;
   flex-direction: column;
-
   background-color: #fff;
 }
 .team-img {
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px;
+  width: 264px;
+  height: auto;
 }
 
 .team-item-title {
@@ -260,6 +271,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin: 0 auto;
 }
 .team-text {
   font-weight: 400;
@@ -268,11 +280,13 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin: 0 auto;
+  padding-bottom: 32px;
 }
 
 /* #endregion team */
 /* #region portfolio */
-.our-portfolio {
+.our-portfolio .container {
 }
 .portfolio-title {
   padding: 120px 0px 72px;
@@ -284,6 +298,8 @@ img {
   color: #2e2f42;
 }
 .portfolio-list {
+  padding-left: 0px;
+  padding-bottom: 120px;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -321,7 +337,7 @@ img {
   flex-direction: column;
   background-color: #2e2f42;
 }
-.logo {
+.logo-footer {
   display: flex;
   align-items: center;
   justify-content: flex-start;
