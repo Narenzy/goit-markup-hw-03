@@ -262,7 +262,7 @@ img {
   /* outline: 1px red solid; */
 }
 .team-title {
-  padding: 72px;
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11111;
@@ -340,7 +340,6 @@ img {
   color: #2e2f42;
 }
 .portfolio-list {
-  padding-bottom: 120px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
